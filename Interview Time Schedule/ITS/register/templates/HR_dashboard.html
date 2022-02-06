@@ -36,10 +36,15 @@
     border: 1px solid rgba(209, 213, 219, 0.3);
     height: 50vh;
   }
+  .homepage{
+    float: right;
+    margin: 10px;
+  }
 </style>
 
 <body>
   <div class="header">
+    <button onclick="location.href = '/';"class="homepage btn btn-light mb-2">Homepage</button>
     <h1 class="text-center" style="color: white;"><b>HR Dashboard</b></h1>
   </div>
   <div class="container-fluid container-md card" style="display: grid; align-items: center;">
@@ -118,13 +123,15 @@
       .done(function (data) {
         console.log(data);
         if (data.schedule) {
+          $('.data').remove();
+          $('tbody').detach();
           $('.table').append('<tbody></tbody>');
           var tr ='';
           var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
           data.schedule.forEach(element => {
             console.log(new Date(element).toLocaleString(), new Date(element).addHours(1).toLocaleTimeString());
             dt =new Date(element);
-            tr += '<tr>';
+            tr += '<tr class="data">';
             tr += '<td class="text-center">'+dt.toLocaleDateString()+'</td>';
             tr += '<td class="text-center">'+dt.toLocaleTimeString()+'</td>';
             tr += '<td class="text-center">'+dt.addHours(1).toLocaleTimeString()+'</td>';
