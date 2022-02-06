@@ -1,0 +1,68 @@
+#venv
+
+/Interview Time Schedule/venv
+
+#db and other folders
+
+/Interview Time Schedule/ITS/db.sqlite3
+
+/Interview Time Schedule/ITS/collectstatic/
+
+*.pyc
+db.sqlite3
+debug.log
+*.log
+*/__pycache__/
+*.py[cod]
+
+### Django ###
+*.pot
+local_settings.py
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+#idea files
+.idea/
+
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg

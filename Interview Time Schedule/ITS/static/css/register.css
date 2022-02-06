@@ -1,0 +1,28 @@
+.register{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.form-input{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.candidate,.interviewer {
+  flex: 0 0 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.submit-btn{
+  text-align: end;
+}
+label{
+  margin-right: 10px;
+}
+
+.heading{
+  color: white;
+}

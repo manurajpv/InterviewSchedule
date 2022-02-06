@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  {% load static %}
+  <link href='{% static "css/register.css" %}' rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<style>
+  body {
+    background-color: #0E63FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%233e81fe' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%236e9ffd' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%239fbefc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23cfdcfb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23FFFAFA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .card {
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    height: 50vh;
+  }
+</style>
+
+<body>
+  <div class="header">
+    <h1 class="text-center font-weight-bold heading">Interview Time Schedule</h1>
+  </div>
+  <div class="container-fluid container-md card" style="display: grid; align-items: center;">
+    <div class="text-center">
+      <div>
+        <label>View the Interview Time Schedule</label>
+      </div>
+      <button onclick="location.href = '/HR/';" class="btn btn-primary mb-2"> View Time Schedule</button>
+    </div>
+    <div class="text-center">
+      <div>
+        <label>Register For Interview</label>
+      </div>
+      <button onclick="location.href = '/register/';"class="btn btn-primary mb-2">Register</button>
+    </div>
+  </div>
+</body>
+
+</html>
